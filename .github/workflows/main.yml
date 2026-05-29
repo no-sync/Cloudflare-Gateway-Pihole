@@ -41,3 +41,6 @@ jobs:
       
       - name: Cloudflare Gateway Zero Trust 
         run: python -m src run
+
+      - name: Keepalive
+        uses: entepotenz/keep-github-actions-alive-min-dependencies@v1
