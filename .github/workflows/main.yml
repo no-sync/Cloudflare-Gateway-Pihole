@@ -1,8 +1,8 @@
 name: Add Rules to Cloudflare Gateway
 on:
   push:
-    schedule:
-      - cron: "0 */4 * * *"
+  schedule:
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 jobs:
   run:
@@ -28,7 +28,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.11
+          python-version: 3.14
         
       - name: Cache Data
         id: cache-cloudflare
