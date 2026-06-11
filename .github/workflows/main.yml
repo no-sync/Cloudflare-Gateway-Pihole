@@ -28,7 +28,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@main
         with:
-          python-version: 3.14
+          python-version: 3.x
 
       - name: Install Dependencies
         run: |
