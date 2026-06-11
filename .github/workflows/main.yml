@@ -29,6 +29,11 @@ jobs:
         uses: actions/setup-python@main
         with:
           python-version: 3.14
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install tldextract
         
       - name: Cache Data
         id: cache-cloudflare
